@@ -7,13 +7,15 @@ int main() {
     int drink=k*l;
     int drinkRound=n*nl;
     int drinks=drink/drinkRound;
-    int salt=p/(n*np)
-    int stuff=[drink,drinkRound,salt];
-    if(drinks<salt&&drinks<stuff){
+    int salt=p/(n*np);
+    if(drinks<salt&&drinks<lime){
         cout << drinks;
     }
-    else if(salt<drinks&&salt<stuff){
+    else if(salt<=drinks&&salt<=lime){
         cout << salt;
     }
-    else{cout << stuff;}
+    else if(lime<=drinks&&lime<=salt){
+        cout<<lime;
+    }
+    else{cout << lime;}
 }
